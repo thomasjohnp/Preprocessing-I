@@ -198,8 +198,12 @@ header {
       display: none;
     }
     text-decoration: none;
-	display: block;
+    display: block;
 	margin-bottom: 4rem;
+	color: @pageColor;
+	&:hover {
+		font-weight: bold;
+	}
   }
 
   h1 {
@@ -209,8 +213,8 @@ header {
     @media (max-width: 500px) {
       width: 100%;
       font-size: 4rem;
-	  margin-bottom: 1rem;
-	  text-align: center;
+      margin-bottom: 1rem;
+      text-align: center;
     }
   }
 
@@ -240,12 +244,11 @@ header {
 
       @media (max-width: 500px) {
         display: none;
-	
-	}
-	@media (min-width: 879px) {
-		margin-top: 13vh;
-	}
-}
+      }
+      @media (min-width: 879px) {
+        margin-top: 13vh;
+      }
+    }
   }
 }
 
@@ -254,10 +257,10 @@ header {
 
   align-content: center;
   @media (max-width: 500px) {
-	width: 50%;
-	align-items: center;
-	margin: 5% auto;
-	flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: 5% auto;
+    flex-direction: column;
   }
   p,
   ul {
@@ -288,11 +291,21 @@ header {
     .emphasize {
       font-weight: bold;
     }
+    #personalHistory {
+      @media (max-width: 500px) {
+        justify-content: center;
+        margin-top: -20vh;
+      }
+    }
     #achievements {
       background-color: @pageColor;
       color: white;
       border: 15px solid @pageColor;
       padding: 4%;
+      @media (max-width: 500px) {
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
     }
     #contact a {
       text-decoration: none;
@@ -319,9 +332,14 @@ header {
       width: 100%;
       justify-content: center;
       margin-left: 2%;
+      margin-top: -10vh;
     }
     .solidLine {
       .line;
+      @media (max-width: 500px) {
+        border-bottom: 8px solid @pageColor;
+        width: 100%;
+      }
     }
 
     .aboutInfo {
@@ -336,6 +354,11 @@ header {
       }
       h6 {
         margin-bottom: 2%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1vh;
       }
     }
   }

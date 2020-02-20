@@ -170,11 +170,15 @@ header a {
   text-decoration: none;
   display: block;
   margin-bottom: 4rem;
+  color: dodgerblue;
 }
 @media (min-width: 501px) {
   header a {
     display: none;
   }
+}
+header a:hover {
+  font-weight: bold;
 }
 header h1 {
   width: 80%;
@@ -270,11 +274,23 @@ header .headerSideways #developerWord {
 .bothSides .leftSide .emphasize {
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .bothSides .leftSide #personalHistory {
+    justify-content: center;
+    margin-top: -20vh;
+  }
+}
 .bothSides .leftSide #achievements {
   background-color: dodgerblue;
   color: white;
   border: 15px solid dodgerblue;
   padding: 4%;
+}
+@media (max-width: 500px) {
+  .bothSides .leftSide #achievements {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 .bothSides .leftSide #contact a {
   text-decoration: none;
@@ -300,12 +316,19 @@ header .headerSideways #developerWord {
     width: 100%;
     justify-content: center;
     margin-left: 2%;
+    margin-top: -10vh;
   }
 }
 .bothSides .rightSide .solidLine {
   border-bottom: 10px solid dodgerblue;
   width: 90%;
   margin-right: 5.5%;
+}
+@media (max-width: 500px) {
+  .bothSides .rightSide .solidLine {
+    border-bottom: 8px solid dodgerblue;
+    width: 100%;
+  }
 }
 .bothSides .rightSide .aboutInfo {
   width: 95%;
@@ -320,4 +343,11 @@ header .headerSideways #developerWord {
 }
 .bothSides .rightSide .aboutInfo h6 {
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .bothSides .rightSide .aboutInfo {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1vh;
+  }
 }
